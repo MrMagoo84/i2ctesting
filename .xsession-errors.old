@@ -1,0 +1,16 @@
+Xsession: X session started for debian at Sun Mar  1 20:46:06 UTC 2015
+localuser:debian being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 3611 requests (3611 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 0 (Success) on X server :0.
+wicd-client.py: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+Has notifications support True
+Loading...
+Connecting to daemon...
+Connected.
+displaytray True
+Done loading.
+Wicd daemon is shutting down!
+lxpanel: Fatal IO error 0 (Success) on X server :0.
