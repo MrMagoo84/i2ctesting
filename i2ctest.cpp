@@ -12,9 +12,9 @@ using namespace std;
 //function to combine upper and lower bytes of register values from MPU-6050
 signed short int com_val(signed short int devaddr, signed short int hiaddr, signed short int loaddr);
 
-	myI2C hiptr;
-	myI2C loptr;
-	myI2C status;
+myI2C hiptr("/dev/i2c-3");
+myI2C loptr("/dev/i2c-3");
+myI2C status("/dev/i2c-3");
 
 int main(int argc, char *argv[]){
 	int sleep = 0;

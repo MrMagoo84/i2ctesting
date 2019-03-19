@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-myI2C::myI2C(){
+myI2C::myI2C(const char *path) : g_i2cPath(path) {
 	this->i2cOpen();
 }
 
@@ -14,7 +14,7 @@ myI2C::~myI2C(){
 void myI2C::i2cOpen()
 {
 	//cout << "beagle-i2c opening /dev/i2c-3... ";
-	g_i2cFile = open("/dev/i2c-3", O_RDWR);
+	g_i2cFile = open(this->g_i2cPath, O_RDWR);
 	if (g_i2cFile < 0) {
 		perror("i2cOpen in myI2C::i2cOpen");
 		exit(1);

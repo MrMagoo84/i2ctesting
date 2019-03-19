@@ -11,9 +11,12 @@
 #define MAX_BUFFER_SIZE					64
 
 class myI2C {
-	int g_i2cFile;
 public:
-	myI2C();
+  const char *g_i2cPath;
+	int g_i2cFile;
+
+public:
+	myI2C(const char *path);
 	~myI2C();
 	
 	// Public Variables
