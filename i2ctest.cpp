@@ -1,6 +1,6 @@
 #include<ncurses.h>
 #include<iostream>
-#include"Beaglebone-I2C/include/i2c.h"
+#include"i2c.h"
 #include<unistd.h>
 
 //Device and status register addresses
@@ -8,7 +8,6 @@
 #define STATUS 0x6b
 
 using namespace std;
-
 
 //function to combine upper and lower bytes of register values from MPU-6050
 signed short int com_val(signed short int devaddr, signed short int hiaddr, signed short int loaddr);
